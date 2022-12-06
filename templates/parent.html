@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}
+    <title>parent</title>
+{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}">
+</head>
+<body>
+    <center>
+        
+            
+        <h1>this is the parent tag</h1>
+        <h2 class="btn btn-primary">parent button</h2>
+        <h3>my name is nagendra </h3>
+        <h3>i am studying python course</h3>
+        
+        
+        
+        
+        <h1>i am searching for job apportunity </h1>
+
+        {% block body_block %}
+        {% endblock%}
+    </center>
+
+
+
+
+   <script src="{% static 'mdb.min.js'%}"></script> 
+</body>
+</html>
